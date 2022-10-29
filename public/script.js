@@ -34,7 +34,7 @@ navigator.mediaDevices.getUserMedia({
 
     //Dealing with chat messages and functions
     // $ is the shorthand for JQUERY
-    let text = $('input')
+    let text = $("input")
 
     //e is the event of typing on the keyboard
     // 13 is the code for the enter key, and we don't want to send an empty message
@@ -46,9 +46,9 @@ navigator.mediaDevices.getUserMedia({
         }
     })
 
-    socket.on('createMessage', message => {
+    socket.on("createMessage", message => {
         //after every message we will append to the ul which will have class message
-        $('.messages').append(`<li class="message"><b>user</b><br/>${message}</li>`);
+        $("ul").append(`<li class="message"><b>user</b><br/>${message}</li>`);
         scrollToBottom()
     })
 
