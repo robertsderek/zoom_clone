@@ -6,8 +6,8 @@ myVideo.muted = true;
 
 var peer = new Peer(undefined, {
     path: '/peerjs',
-    host: '/',
-    port: 'process.env.PORT'
+    host: 'zoom_clone.herokuapp.com',
+    port: '443'
 });
 
 let myVideoStream 
